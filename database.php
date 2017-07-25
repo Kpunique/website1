@@ -8,7 +8,8 @@
         $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     } catch (PDOException $e) {
         echo $e->getMessage();
-        exit();
+        //Displays the exception and keeps on rolling, uncomment the exit if you want it to halt instead
+        //exit();
     }
     
     function select_all()
