@@ -1,5 +1,5 @@
 <?php
-    $dsn = 'mysql:host=localhost;dbname=stickmanXdb';
+    $dsn = 'mysql:host=localhost;dbname=renameMeToYourGroupName';
     $username = 'root';
     $password = '';
 
