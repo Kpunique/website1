@@ -7,7 +7,7 @@ require_once('database.php');
     //set default value of variables for initial page load
     if (!isset($firstName)) { $firstName = ''; } 
     if (!isset($lastName)) { $lastName = ''; } 
-    if (!isset($username)) { $username = ''; } 
+    if (!isset($userName)) { $userName = ''; } 
     if (!isset($email)) { $email = ''; }
 ?> 
 <!DOCTYPE html>
