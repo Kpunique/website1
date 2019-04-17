@@ -1,5 +1,5 @@
 <?php
-    $dsn = 'mysql:host=localhost;dbname=renameMeToYourGroupName';
+    $dsn = 'mysql:host=localhost;dbname=whiskey_db';
     $username = 'root';
     $password = '';
 
