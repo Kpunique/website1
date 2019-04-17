@@ -1,6 +1,6 @@
 <?php
         require_once('database.php');
-        $products = select_all();
+        $registrations = select_all();
         ?>
 <!DOCTYPE html>
 <!--
@@ -23,8 +23,17 @@ and open the template in the editor.
                 <th>User Name</th>
                 <th>Email</th>
                 
-                <?php foreach ($products as $product) : ?>
+                
             </tr>
+            
+                <?php foreach ($registrations as $registration) : ?>
+            <tr>
+                <td> <?php echo $registration['firstName']; ?> </td>
+                <td> <?php echo $registration['lastName']; ?> </td>
+                <td> <?php echo $registration['userName']; ?> </td>
+                <td> <?php echo $registration['email']; ?> </td>
+            </tr>
+            <?php                    endforeach;?>
             
         </table>
     </body>

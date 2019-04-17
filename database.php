@@ -1,5 +1,5 @@
 <?php
-    $dsn = 'mysql:host=localhost;dbname=whiskey';
+    $dsn = 'mysql:host=localhost;dbname=whiskey_db';
     $username = 'root';
     $password = '';
 
@@ -22,5 +22,20 @@
       $results =  $statement->fetchAll();
       return $results;
     }
+    
+    function add_resirvation($firstName, $lastName, $userName, $email) {
+    global $db;
+    $query = 'INSERT INTO memebers
+                 (firstName, lastName, userName, email)
+              VALUES
+                 (:firstName, :lastName, :userName, :email)';
+    $statement = $db->prepare($query);
+    $statement->bindValue(':firstName', $firstName);
+    $statement->bindValue(':lastName', $lastName);
+    $statement->bindValue(':userName', $userName);
+    $statement->bindValue(':email', $email);
+    $statement->execute();
+    $statement->closeCursor();
+}
 
 ?>
