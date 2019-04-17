@@ -53,10 +53,22 @@ and open the template in the editor.
     <head>
         <meta charset="UTF-8">
         <title></title>
+        
     </head>
     <body>
-        <?php
-        // put your code here
-        ?>
+        <h1> Welcome to </h1>
+        
+        <label> First Name</label>
+        <span> <?php echo $firtName; ?> </span> <br>
+        
+        <label> Last Name </label>
+        <span> <?php echo $lasName; ?> </span><br>
+        
+        <label> User Name</label>
+        <span> <?php echo $userName; ?> </span><br>
+        
+         <label> Email Address</label>
+        <span> <?php echo $email; ?> </span><br>
+        
     </body>
 </html>
