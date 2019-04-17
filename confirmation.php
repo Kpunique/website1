@@ -1,3 +1,48 @@
+<?php 
+//get the data from the form
+$firtName = filter_input(INPUT_POST, 'firstName');
+$lastName = filter_input(INPUT_POST,'lastName');
+$userName = filter_input(INPUT_POST,'userName');
+$email = filter_input(INPUT_POST,'email',FILTER_VALIDATE_EMAIL);
+
+if($firtName == FALSE)
+{$errorMessageFirst = 'Must input a first name.';}
+
+
+if($lastName == FALSE)
+{$errorMessageLast = 'Must input a last name.';}
+
+if($userName == FALSE)
+{$errorMessageUser = 'Must input a userName.';}
+
+
+if($email == FALSE)
+{$errorMessageEmail = 'Must input an email address.';}
+
+
+if ($errorMessageFirst != '')
+{
+    include('index.php');
+    exit();
+}
+else if ($errorMessageLast != '')
+{
+    include('index.php');
+    exit();
+}
+else if ($errorMessageUser != '')
+{
+    include('index.php');
+    exit();
+}
+else if ($errorMessageEmail != '')
+{
+    include('index.php');
+    exit();
+}
+
+?>
+
 <!DOCTYPE html>
 <!--
 To change this license header, choose License Headers in Project Properties.
