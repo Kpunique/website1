@@ -16,7 +16,7 @@
     {
         global $db;
  
-      $query = 'SELECT * FROM yourtablename';
+      $query = 'SELECT * FROM members';
       $statement = $db->prepare($query);
       $statement->execute();
       $results =  $statement->fetchAll();
