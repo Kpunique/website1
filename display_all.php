@@ -34,7 +34,8 @@ and open the template in the editor.
                 <td> <?php echo $registration['email']; ?> </td>
             </tr>
             <?php                    endforeach;?>
-            
+
         </table>
+        <a href="index.php">Registration Page</a>
     </body>
 </html>
