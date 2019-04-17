@@ -1,5 +1,5 @@
 <?php
-    $dsn = 'mysql:host=localhost;dbname=renameMeToYourGroupName';
+    $dsn = 'mysql:host=localhost;dbname=whiskey';
     $username = 'root';
     $password = '';
 
@@ -16,7 +16,7 @@
     {
         global $db;
  
-      $query = 'SELECT * FROM yourtablename';
+      $query = 'SELECT * FROM members';
       $statement = $db->prepare($query);
       $statement->execute();
       $results =  $statement->fetchAll();

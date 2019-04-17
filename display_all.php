@@ -1,5 +1,6 @@
 <?php
-        require('database.php');
+        require_once('database.php');
+        $products = select_all();
         ?>
 <!DOCTYPE html>
 <!--
@@ -22,7 +23,7 @@ and open the template in the editor.
                 <th>User Name</th>
                 <th>Email</th>
                 
-                <?php foreach ()
+                <?php foreach ($products as $product) : ?>
             </tr>
             
         </table>
