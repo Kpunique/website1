@@ -41,6 +41,8 @@ else if ($errorMessageEmail != '')
     exit();
 }
 
+add_resirvation($firstName, $lastName, $userName, $email);
+
 ?>
 
 <!DOCTYPE html>
