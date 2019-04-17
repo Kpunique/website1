@@ -1,5 +1,5 @@
 <?php
-require_once('database.php');
+require('database.php');
 
 ?>
 
@@ -49,9 +49,10 @@ require_once('database.php');
 
         <div id="buttons">
             <label>&nbsp;</label>
-            <input type="submit" value="Calculate"><br>
+            <input type="submit" value="Register"><br>
         </div>
-
+            
+        <a href="display_all.php">Display User Page</a>
     </form>
     </main>
 </body>
