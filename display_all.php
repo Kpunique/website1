@@ -14,8 +14,9 @@ and open the template in the editor.
         <title>Whiskey Bookface</title>
         <link rel="stylesheet" type="text/css" href="style.css" >
     </head>
+    <main>
     <body>
-        <h1>ALL USER PAGE</h1>
+        <h1>All User Page</h1>
         
         <table>
             <tr>
@@ -38,4 +39,5 @@ and open the template in the editor.
         <br>
         <a href="index.php">Registration Page</a>
     </body>
+    </main>
 </html>

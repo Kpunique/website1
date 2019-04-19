@@ -1,14 +1,14 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
 }
-.main {
-    width: 450px;
+main {
+    width: 700px;
     margin: 0 auto;
     padding: 1em;
-    background: white;
+    background: grey;
     border: 2px solid black;
 }
-.header {
+h1 {
     margin-top: 0;
     color: navy;
 }
@@ -42,4 +42,13 @@ br {
 
 .copyright{
     float:right;
+}
+
+th,td{
+    border: 1px solid black;
+}
+
+table{
+    border-collapse: collapse;
+    width: 100%;
 }
