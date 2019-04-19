@@ -1,0 +1,5 @@
+
+ToDo: change error message variables to match properly
+ToDo: add error messages after each field
+ToDo: fix variable misspellings in confirmation page
+ToDo: add the username check to the database php
