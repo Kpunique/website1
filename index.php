@@ -10,16 +10,9 @@ require('database.php');
     if (!isset($userName)) { $userName = ''; } 
     if (!isset($email)) { $email = ''; }
 ?> 
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Registration Page</title>
-    <link rel="stylesheet" type="text/css" href="main.css">
-</head>
-
-<body>
-    <main>
-    <h1>Registration Page</h1>
+<?php include 'header'; ?>
+    <main class="main">
+    <h1 class="header">Registration Page</h1>
     <?php if (!empty($error_message)) { ?>
         <p class="error"><?php echo htmlspecialchars($error_message); ?></p>
     <?php } ?>
@@ -55,5 +48,4 @@ require('database.php');
         <a href="display_all.php">Display User Page</a>
     </form>
     </main>
-</body>
-</html>
+<?php include 'footer'; ?>
