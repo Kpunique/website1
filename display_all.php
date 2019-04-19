@@ -11,10 +11,11 @@ and open the template in the editor.
 <html>
     <head>
         <meta charset="UTF-8">
-        <title></title>
+        <title>Whiskey Bookface</title>
+        <link rel="stylesheet" type="text/css" href="style.css" >
     </head>
     <body>
-        <h2>ALL USER PAGE</h2>
+        <h1>ALL USER PAGE</h1>
         
         <table>
             <tr>
@@ -22,8 +23,6 @@ and open the template in the editor.
                 <th>Last Name</th>
                 <th>User Name</th>
                 <th>Email</th>
-                
-                
             </tr>
             
                 <?php foreach ($registrations as $registration) : ?>
@@ -36,6 +35,7 @@ and open the template in the editor.
             <?php                    endforeach;?>
 
         </table>
+        <br>
         <a href="index.php">Registration Page</a>
     </body>
 </html>
