@@ -1,4 +1,5 @@
 <?php
+require_once('database.php');
 //get the data from the form
 $firstName = filter_input(INPUT_POST, 'firstName');
 $lastName = filter_input(INPUT_POST, 'lastName');
