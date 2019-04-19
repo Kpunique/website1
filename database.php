@@ -38,4 +38,31 @@
     $statement->closeCursor();
 }
 
+function checkUsername($userName)
+{
+    global $db;
+    $query='SELECT * FROM members WHERE username=:userName';
+    $statement = $db->prepare($query);
+    $statement->bindValue(':userName',$userName);
+    $statement->execute();
+    $userN = $statement->fetch();
+    $statement->closeCursor();
+    $user_name=$userN['userName'];
+   return $user_name;
+            
+}
+
+function checkEmail ($email)
+{
+    global $db;
+    $query='SELECT * FROM members WHERE email=:email';
+    $statement= $db->prepare($query);
+    $statement->bindValue(':email',$email);
+    $statement->execute();
+    $eMail = $statement->fetch();
+    $statement->closeCursor();
+    $user_email=$eMail['email'];
+    return $user_email;
+}
+
 ?>
