@@ -80,10 +80,10 @@ and open the template in the editor.
         <h1> Registration Completed </h1>
 
         <label> First Name:</label>
-        <span> <?php echo $firtName; ?> </span> <br>
+        <span> <?php echo $firstName; ?> </span> <br>
 
         <label> Last Name:</label>
-        <span> <?php echo $lasName; ?> </span><br>
+        <span> <?php echo $lastName; ?> </span><br>
 
         <label> User Name:</label>
         <span> <?php echo $userName; ?> </span><br>

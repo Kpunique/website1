@@ -25,7 +25,7 @@
     
     function add_resirvation($firstName, $lastName, $userName, $email) {
     global $db;
-    $query = 'INSERT INTO memebers
+    $query = 'INSERT INTO members
                  (firstName, lastName, userName, email)
               VALUES
                  (:firstName, :lastName, :userName, :email)';
